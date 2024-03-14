@@ -6,7 +6,7 @@ class Menu extends Phaser.Scene {
 
     preload() {
         this.load.image('rocket', './assets/rocket.png')
-        this.load.image('menuimg', './img/menu.png')
+        this.load.image('menuimg', './img/menu1.png')
         this.load.audio('backgroundMusic', './audio/success-in-life-157581.mp3')
         this.load.audio('start', './assets/sfx-shot.wav')
 
@@ -34,13 +34,13 @@ class Menu extends Phaser.Scene {
             strokeThickness: 5
         }).setDepth(5).setInteractive();
         textRound.on('pointerover', () => {
-            textRound.setColor('#00ff00'); 
+            textRound.setColor('#000000'); 
         })
         textRound.on('pointerout', () => {
             textRound.setColor('#ff00ff'); 
         })
         textRound.on('pointerdown', () => {
-            textRound.setColor('lightblue'); 
+            textRound.setColor('black'); 
             this.btnMusic.play()
             this.time.delayedCall(300, () => {
                 this.scene.start('playScene'); 
@@ -51,7 +51,7 @@ class Menu extends Phaser.Scene {
             textRound.setColor('#ff00ff'); 
         })
         this.add.text(50,500,"Click the piece to choose, \nthen click on the coloured block to move.\n\nWhite is the first to move,\nhope you know the rule of chess",{
-            fontSize: '25px', color: '#ff00ff', stroke: '#ffffff',fontFamily:"Georgia",
+            fontSize: '29px', color: '#003300', stroke: '#ffffff',fontFamily:"Georgia",
            strokeThickness: 5
        }).setDepth(5).setInteractive();
         this.input.keyboard.on('keydown-SPACE', () => { 
