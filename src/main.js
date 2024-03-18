@@ -1,5 +1,7 @@
 // Gyungmin Roh - Chess
 // Physics, particles, text objects, tween, animation were used
+// https://pixabay.com/music/search/success/ is the music source
+// All the other source are made by me
 
 "use strict"
 
